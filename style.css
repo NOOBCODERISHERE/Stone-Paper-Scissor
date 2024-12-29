@@ -1,0 +1,114 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.choices {
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #ffffff, #d6e4f1);
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.choice-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#game-result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+.score {
+    margin-top: 20px;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset:hover {
+    background-color: #c0392b;
+}
+#game-result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2ecc71;
+    font-family: 'Arial', sans-serif;
+}
+
+.countdown {
+    color: #e74c3c;
+    font-size: 32px;
+    font-weight: bold;
+    animation: countdown-animation 1s ease-in-out;
+}
+
+@keyframes countdown-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        color: #ff5733;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
